@@ -115,7 +115,8 @@ const HomePaje = () => {
                 </div>
 
                 {/* 3 section */}
-                <div className='bg-white shadow-md shadow-black   flex-col-reverse mt-5 items-center rounded-md md:w-[1156px] md:h-[281px] mb-9 md:mt-30 border  md:mt-8 md:ml-[14rem] flex justify-between'>
+               <div className='md:flex gap-8 justify-center  items-center '>
+               <div className='bg-white shadow-md shadow-black   flex-col-reverse mt-5 items-center rounded-md md:w-[1156px] md:h-[281px] mb-9 md:mt-30 border  md:mt-8  flex justify-between'>
                     <div className='md:flex md:gap-x-[23rem]'>
                         {/* leaf side */}
                         <div className='ml-8 mt-4 rounded   w-[350px] h-[250px] '>
@@ -159,6 +160,7 @@ const HomePaje = () => {
 
                     </div>
                 </div>
+               </div>
 
             </div>
 

@@ -130,7 +130,7 @@ const ExchangePage = () => {
 
                     {/* 5 section */}
                     <div className='mt-2 md:flex gap-8 justify-center mb-16'>
-                        <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-[490px]  shadow-md shadow-black'>
+                        <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
                             <table className="md:min-w-full  mt-10  ">
                                 <thead className=''>
                                     <tr className=''>

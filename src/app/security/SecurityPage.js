@@ -68,7 +68,7 @@ const SecurityPage = () => {
 
         {/* 3 section */}
       <div className='mt-5 md:flex gap-8 justify-center'>
-      <div className=' md:mt-8  rounded bg-white mb-5 md:w-[1100px] md:h-full  h-full w-full shadow-md shadow-black'>
+      <div className=' md:mt-8  rounded bg-white mb-5 md:w-[1100px] md:h-full   h-full w-full shadow-md shadow-black'>
           <div className=' mt-5 m-9'>
             <div className='flex'>
               <table className="md:min-w-full  mt-10  border border-gray-300">
