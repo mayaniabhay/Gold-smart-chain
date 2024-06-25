@@ -16,11 +16,11 @@ import Rewards from '@/assets/Rewards.svg'
 
 const Sidebar = () => {
     const menus = [
-        { name: "Dashboard", link: "/", svg: Dashboard },
-        { name: "Buy", link: "/", svg: Buy },
-        { name: "Sell", link: "/", svg: Sell },
-        { name: "Deposit", link: "/", svg: Deposit },
-        { name: "Withdrawal", link: "/", svg: Withdrawal },
+        { name: "Dashboard", link: "/dashboard", svg: Dashboard },
+        { name: "Buy", link: "/buy", svg: Buy },
+        { name: "Sell", link: "/sell", svg: Sell },
+        { name: "Deposit", link: "/deposit", svg: Deposit },
+        { name: "Withdrawal", link: "/withdrawal", svg: Withdrawal },
         { name: "Exchange", link: "/exchange", svg: Exchange },
         { name: "History", link: "/history", svg: History },
         { name: "Bank details", link: "/bank", svg: Bankdetails },

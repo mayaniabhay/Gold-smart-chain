@@ -24,11 +24,11 @@ const Header = () => {
                     </div>
                     <div className=' hidden md:block md:mr-3'>
                         <ul className=' flex gap-x-5 mt-5 text-sm text-white '>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Dashboard</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Buy</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Sell</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Deposit</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Withdrawal</li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/dashboard"}>Dashboard</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/buy"}>Buy</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/sell"}>Sell</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/deposit"}>Deposit</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/withdrawal"}>Withdrawal</Link></li>
                             <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/exchange"}>Exchange</Link></li>
                             <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/history"}>History</Link></li>
                             <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/bank"}>Bank details</Link></li>
