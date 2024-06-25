@@ -23,7 +23,7 @@ const Sidebar = () => {
         { name: "Withdrawal", link: "/", svg: Withdrawal },
         { name: "Exchange", link: "/exchange", svg: Exchange },
         { name: "History", link: "/history", svg: History },
-        { name: "Bank details", link: "/", svg: Bankdetails },
+        { name: "Bank details", link: "/bank", svg: Bankdetails },
         { name: "Rewards", link: "/rewards", svg: Rewards }
     ];
 
