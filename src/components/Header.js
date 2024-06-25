@@ -11,7 +11,7 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <header>
-        <section className='bg-[#212632] '>
+        <section className='bg-[#212632] w-[420px] md:w-full '>
             <div>
                 <div className='h-14 bg-[#212632] flex  justify-between'>
                     {/* logo  */}
