@@ -1,9 +1,12 @@
+"use client"
+
 import Image from 'next/image'
 import React from 'react'
 import logo from '@/assets/logo.svg'
 import eng from '@/assets/eng.svg'
 import arrow from '@/assets/arrow.svg'
 import Sidebar from './Sidebar'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -13,7 +16,7 @@ const Header = () => {
                 <div className='h-14 bg-[#212632] flex  justify-between'>
                     {/* logo  */}
                     <div className='w-12 h-20 px-1 hidden md:block'>
-                        <Image className='ml-8 ' src={logo} alt='logo/imaeg' />
+                        <Link href={"/"}><Image className='ml-8 ' src={logo} alt='logo/imaeg' /></Link>
                       
                     </div>
                     <div className='  md:hidden'>
@@ -26,10 +29,10 @@ const Header = () => {
                             <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Sell</li>
                             <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Deposit</li>
                             <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Withdrawal</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Exchange</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>History</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Bank details</li>
-                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'>Rewards</li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/exchange"}>Exchange</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/history"}>History</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/bank"}>Bank details</Link></li>
+                            <li className='hover:text-[#cea666] hover:underline cursor-pointer'><Link href={"/rewards"}>Rewards</Link></li>
                         </ul>
                     </div>
 

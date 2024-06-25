@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Profil from '@/assets/profil/1profil.jpeg'
+import Link from 'next/link'
 
 const data = [
     {
@@ -45,11 +46,10 @@ const HomePaje = () => {
                 <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
                     <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span>Profile</div>
                 </div>
-                <div className='items-center flex ml-3 gap-x-5  h-16 '>
-                    <button className='bg-white hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Profile setting</button>
-                    <button className='bg-white hover:bg-[#cea666] hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Security</button>
-                    <button className='bg-white hover:bg-[#cea666] hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Bank Details</button>
-                </div>
+                <div className='items-center text-center  flex ml-3 gap-x-5  h-16 '>
+                    <Link href={"/"} className='bg-white  hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300 '>Profile setting</Link>
+                    <Link href={"/security"} className='bg-white hover:bg-[#cea666] hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Security</Link>
+                    <Link href={"/bank"} className='bg-white hover:bg-[#cea666] hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Bank Details</Link>                </div>
 
                 {/* 2 section  */}
                 <div className='mt-5 md:flex gap-8 justify-center '>
@@ -61,7 +61,7 @@ const HomePaje = () => {
                                     data.map((item, index) => (
                                         <div key={item}>
                                             <div className=' md:ml-32 md:mt-16 ml-16 mt-20 '>
-                                                <Image 
+                                                <Image
                                                     className=' rounded-full md:w-[15rem] md:h-28 w-36 h-36  border-slate-300 border-4 shadow-lg shadow-slate-300'
                                                     src={item.profilePicture}
                                                     alt='img'

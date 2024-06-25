@@ -21,10 +21,10 @@ const Sidebar = () => {
         { name: "Sell", link: "/", svg: Sell },
         { name: "Deposit", link: "/", svg: Deposit },
         { name: "Withdrawal", link: "/", svg: Withdrawal },
-        { name: "Exchange", link: "/", svg: Exchange },
-        { name: "History", link: "/", svg: History },
+        { name: "Exchange", link: "/exchange", svg: Exchange },
+        { name: "History", link: "/history", svg: History },
         { name: "Bank details", link: "/", svg: Bankdetails },
-        { name: "Rewards", link: "/", svg: Rewards }
+        { name: "Rewards", link: "/rewards", svg: Rewards }
     ];
 
      const [open, setOpen] = useState(true);
