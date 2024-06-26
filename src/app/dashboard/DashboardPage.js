@@ -47,7 +47,7 @@ const data = [
 
 const DashboardPage = () => {
   return (
-    <section className='bg-slate-100'>
+    <section className='bg-slate-00'>
       <div>
         <div className=''>
 
@@ -60,7 +60,7 @@ const DashboardPage = () => {
           <div>
             <div className='md:flex md:justify-center mt-9 justify-center ml-16'>
               {/*1 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-[#323247]'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -82,7 +82,7 @@ const DashboardPage = () => {
                 </div>
               </div>
               {/*2 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-[#323247]'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -104,7 +104,7 @@ const DashboardPage = () => {
                 </div>
               </div>
               {/*3 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-[#323247]'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -126,7 +126,7 @@ const DashboardPage = () => {
                 </div>
               </div>
               {/*4 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-[#323247]'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -218,7 +218,7 @@ const DashboardPage = () => {
 
           {/* 4 section */}
           <div className=' md:flex gap-4 justify-center  items-center '>
-            <div className='mt-10 md:mt-5 md:flex justify-between items-center flex bg-slate-100 md:w-[1100px] md:h-[30px] w-full  h-[110px]  '>
+            <div className='mt-10 md:mt-5 md:flex justify-between items-center flex bg-slate-00 md:w-[1100px] md:h-[30px] w-full  h-[110px]  '>
               <h1 className='font-bold md:ml-24 mt-4'>Buy & Sell History</h1>
               <div className='flex justify-between items-center'>
                 <button className='bg-white mt-2   hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
