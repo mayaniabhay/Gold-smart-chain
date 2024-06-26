@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
-import Stand from '@/assets/sall/stand.png'
+import Stand from '@/assets/sall/buld.png'
 import Rupis from '@/assets/sall/mm.svg'
 import Arror from '@/assets/sall/arroa.svg'
 

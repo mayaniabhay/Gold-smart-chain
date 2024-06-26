@@ -5,7 +5,7 @@ import RewardLogo from '@/assets/rewards/rewardslogo.svg'
 import Image1 from '@/assets/rewards/image.svg'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
-import Stand from '@/assets/sall/stand.png'
+import Stand from '@/assets/sall/buld.png'
 
 const data = [
     {

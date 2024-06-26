@@ -13,7 +13,7 @@ import Profil from '@/assets/profil/1profil.jpeg'
 const Header = () => {
     return (
         <header>
-            <section className='bg-[#212632]  md:w-[1051px] '>
+            <section className='bg-[#212632] w-full md:w-full '>
                 <div>
                     <div className='h-14 bg-[#212632] flex  justify-between'>
                         {/* logo  */}
