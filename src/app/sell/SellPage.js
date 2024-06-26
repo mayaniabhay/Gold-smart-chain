@@ -5,7 +5,7 @@ import Image1 from '@/assets/rewards/image.svg'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
 import Stand from '@/assets/sall/stand.png'
-import MM from '@/assets/sall/mm.svg'
+import Rupis from '@/assets/sall/mm.svg'
 import Arror from '@/assets/sall/arroa.svg'
 
 
@@ -76,7 +76,7 @@ const SellPage = () => {
                                             <div className='bg-slate-100 md:w-[430px] h-[84px]'>
                                                 <div className='flex justify-between'>
                                                     <div className='relative flex mt-3'>
-                                                        <span> <Image className='mt-5 ml-4' src={MM} alt='Solid' /></span>
+                                                        <span> <Image className='mt-5 ml-4' src={Rupis} alt='Solid' /></span>
                                                         <h1 className='font-bold mt-4 ml-3'>EUR</h1>
                                                         <button onClick={toggleDropdown} type='button'><Image className='mt-5 ml-2' src={Arror} alt='Solid' /></button>
                                                         {/* <!-- Dropdown menu --> */}
