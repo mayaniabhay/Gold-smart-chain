@@ -2,7 +2,7 @@ import React from 'react'
 import RewardsPage from './RewardsPage'
 
 export const metadata = {
-    title: "Login : GOLD SMART CHAIN"
+    title: "Rewards : GOLD SMART CHAIN"
   }
 
 const page = () => {

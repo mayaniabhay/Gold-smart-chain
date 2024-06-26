@@ -3,7 +3,7 @@ import HistoryPage from './HistoryPage'
 
 
 export const metadata = {
-    title: "SignUp : GOLD SMART CHAIN"
+    title: "History : GOLD SMART CHAIN"
 }
 
 
