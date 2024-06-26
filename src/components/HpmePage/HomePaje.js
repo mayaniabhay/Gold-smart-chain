@@ -41,7 +41,7 @@ const HomePaje = () => {
 
 
     return (
-        <section className='bg-slate-200'>
+        <section className='bg-slate-100'>
             <div className=''>
                 <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
                     <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span>Profile</div>

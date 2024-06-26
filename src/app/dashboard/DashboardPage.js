@@ -47,12 +47,12 @@ const data = [
 
 const DashboardPage = () => {
   return (
-    <section className='bg-slate-200'>
+    <section className='bg-slate-100'>
       <div>
         <div className=''>
 
           {/* 1 section */}
-          <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
+          <div className='bg-white shadow-md shadow-slate-100 border md:m-3 mb-2 h-8 '>
             <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Welcome/</span>,  Ankit.koffeekodes@gmail.com! </div>
           </div>
 
@@ -60,7 +60,7 @@ const DashboardPage = () => {
           <div>
             <div className='md:flex md:justify-center mt-9 justify-center ml-16'>
               {/*1 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-500'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -82,7 +82,7 @@ const DashboardPage = () => {
                 </div>
               </div>
               {/*2 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-500'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -104,7 +104,7 @@ const DashboardPage = () => {
                 </div>
               </div>
               {/*3 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-500'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -126,7 +126,7 @@ const DashboardPage = () => {
                 </div>
               </div>
               {/*4 box  */}
-              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-500'>
+              <div className='bg-white w-[239.53px] h-[121px] md:ml-8 mt-5 rounded-sm  shadow-lg shadow-slate-400'>
                 <div className='flex'><span className=''><Image className='w-[43.91px] h-[44px] rounded-full ml-5 mt-3' src={BB} alt='b/logo' /></span>
                   <div className='mt-3 ml-4'>
                     <h4 className='text-[#cea666] font-bold'>STAND</h4>
@@ -157,17 +157,17 @@ const DashboardPage = () => {
 
                 {/* left side  */}
                 <div>
-                  <div className=' md:ml-20 md:mt-16 w-full  rounded bg-white   md:w-[700px] md:h-[359px]  h-full  shadow-md shadow-black'>
+                  <div className=' md:ml-20 md:mt-14 w-full mt-5 rounded bg-white   md:w-[700px] md:h-[359px]  h-full  shadow-md shadow-slate-400'>
                     <div>
                       <div className='flex justify-between'>
-                        <h1 className='mt-3 ml-5'>SOLID Value Chart in $</h1>
+                        <h1 className='mt-3 ml-5 font-bold'>SOLID Value Chart in $</h1>
                         <div className='flex mt-4'><span className='mr-3 mt-1'><svg width="41" height="17" viewBox="0 0 41 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <mask id="path-1-inside-1_123_2610" fill="white">
                             <rect y="0.195496" width="41" height="16.1955" rx="2" />
                           </mask>
                           <rect y="0.195496" width="41" height="16.1955" rx="2" fill="#CEA666" stroke="#C4CEE4" stroke-width="6" mask="url(#path-1-inside-1_123_2610)" />
                         </svg>
-                        </span><p className='mr-3'>SOLID Value [$]</p></div>
+                        </span><p className='mr-3 font-bold'>SOLID Value [$]</p></div>
                       </div>
                     </div>
 
@@ -179,11 +179,11 @@ const DashboardPage = () => {
                 </div>
                 {/* right side  */}
                 <div>
-                  <div className=' md:ml-10 md:mt-16 mt-5 rounded  bg-white md:w-[296px] md:h-[359px]  h-full  shadow-md shadow-black'>
+                  <div className=' md:ml-6 md:mt-14 mt-5 rounded  bg-white md:w-[296px] md:h-[359px]  h-full  shadow-md shadow-slate-400'>
                     <div>
                       <div>
                         <div className=''>
-                          <h3 className=' font-bold'>Deposit STAND or SOLID</h3>
+                          <h3 className=' font-bold ml-10'>Deposit STAND or SOLID</h3>
                         </div>
                       </div>
                       <div className='md:ml-16 mt-16 ml-14'>
@@ -198,8 +198,8 @@ const DashboardPage = () => {
                         <h2 className='font-bold'>Wallet Address</h2>
                       </div>
 
-                      <div className='bg-slate-100 w-[270px] h-[42px] md:ml-3 mt-3  items-center flex justify-between '>
-                        <p className='ml-1 text-black'>0xE38fb5DD1c837b4DFe...</p>
+                      <div className='bg-slate-100 md:w-[270px] h-[42px] md:ml-3 mt-3  items-center flex justify-between '>
+                        <p className='md:ml-1 text-black'>0xE38fb5DD1c837b4DFe...</p>
                         <span className=' bg-slate-200 h-[42px] w-[42px] flex'><svg className='justify-center items-center flex ml-2 mt-2' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M16.875 2.5H6.875C6.70924 2.5 6.55027 2.56585 6.43306 2.68306C6.31585 2.80027 6.25 2.95924 6.25 3.125V6.25H3.125C2.95924 6.25 2.80027 6.31585 2.68306 6.43306C2.56585 6.55027 2.5 6.70924 2.5 6.875V16.875C2.5 17.0408 2.56585 17.1997 2.68306 17.3169C2.80027 17.4342 2.95924 17.5 3.125 17.5H13.125C13.2908 17.5 13.4497 17.4342 13.5669 17.3169C13.6842 17.1997 13.75 17.0408 13.75 16.875V13.75H16.875C17.0408 13.75 17.1997 13.6842 17.3169 13.5669C17.4342 13.4497 17.5 13.2908 17.5 13.125V3.125C17.5 2.95924 17.4342 2.80027 17.3169 2.68306C17.1997 2.56585 17.0408 2.5 16.875 2.5ZM16.25 12.5H13.75V6.875C13.75 6.70924 13.6842 6.55027 13.5669 6.43306C13.4497 6.31585 13.2908 6.25 13.125 6.25H7.5V3.75H16.25V12.5Z" fill="#CEA666" />
                         </svg>
@@ -217,9 +217,9 @@ const DashboardPage = () => {
 
 
           {/* 4 section */}
-          <div className=' md:flex gap-8 justify-center  items-center '>
-            <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-200 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
-              <h1 className='font-bold md:ml-24'>Recent Exchange</h1>
+          <div className=' md:flex gap-4 justify-center  items-center '>
+            <div className='mt-10 md:mt-5 md:flex justify-between items-center flex bg-slate-100 md:w-[1100px] md:h-[30px] w-full  h-[110px]  '>
+              <h1 className='font-bold md:ml-24 mt-4'>Buy & Sell History</h1>
               <div className='flex justify-between items-center'>
                 <button className='bg-white mt-2   hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
                   <svg className='mt-2 ml-2 justify-end' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,9 +232,9 @@ const DashboardPage = () => {
 
 
           {/* 5 section */}
-          <div className=' md:flex gap-5  justify-center flex'>
-            <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
-              <table className="md:min-w-full  mt-10  ">
+          <div className=' md:flex gap-5   md:w-full justify-center flex'>
+            <div className='overflow-auto md:ml-20 md:mt-7  rounded bg-white  md:w-[1020px] md:h-full  h-full  shadow-md shadow-black'>
+              <table className=" w-full md:ml-5 mt-10  ">
                 <thead className=''>
                   <tr className=''>
                     <th className="px-4 py-2 border-b">S.No</th>
@@ -259,7 +259,7 @@ const DashboardPage = () => {
                   ))}
                 </tbody>
               </table>
-              <div className='flex mt-5 mb-2 md:mt-16 gap-x-14 md:gap-x-[33rem]'>
+              <div className='flex mt-5 mb-2 md:mt-16 gap-x-14 md:gap-x-[33rem] justify-between'>
                 <p className='ml-2'>Showing 1–8 of 20 results</p>
                 <div className='flex gap-1 md:gap-3'>
                   <p className=''>PREVIOUS</p>

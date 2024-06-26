@@ -45,10 +45,10 @@ const data = [
 
 const HistoryPage = () => {
     return (
-        <section className='bg-slate-200'>
+        <section className='bg-slate-100'>
             <div>
                 <div>
-                    <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
+                    <div className='bg-white shadow-md shadow-slate-300 border md:m-3 mb-2 h-8 '>
                         <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span>Transaction History</div>
                     </div>
                     <div className='mt-7  items-center md:flex md:justify-center ml-1 md:gap-14 text-center h-16'>
@@ -61,7 +61,7 @@ const HistoryPage = () => {
 
                     {/* 3 section */}
                     <div className='md:flex gap-8 justify-center flex '>
-                        <div className='mt-10 md:mt-8 md:flex justify-between items-center ml-40 bg-slate-200 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
+                        <div className='mt-10 md:mt-8 md:flex flex justify-between items-center  bg-slate-100 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
                             <h1 className='font-bold md:ml-5'>Deposit By Crypto History</h1>
                             <div className=''>
                                 <button className='bg-white mt-2 md:mr-7 hover:bg-slate-100 ml-3 rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
@@ -75,9 +75,9 @@ const HistoryPage = () => {
 
                     {/* 4 section */}
                     <div className='mt-2 md:flex gap-8 justify-center mb-16'>
-                        <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full shadow-md shadow-black'>
-                            <div>
-                                <table className="md:min-w-full  mt-10  ">
+                        <div className='overflow-autos md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full shadow-md shadow-black'>
+                            <div className='overflow-auto'>
+                                <table className="w-full  mt-10  ">
                                     <thead className=''>
                                         <tr className=''>
                                             <th className="px-4 py-2 border-b">S.No</th>
@@ -103,7 +103,7 @@ const HistoryPage = () => {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className='flex mt-5 mb-2 md:mt-16 gap-x-14 md:gap-x-[33rem]'>
+                            <div className='flex justify-between mt-5 mb-2 md:mt-16 gap-x-14 md:gap-x-[33rem]'>
                                 <p className='ml-2'>Showing 1–8 of 20 results</p>
                                 <div className='flex gap-1 md:gap-3'>
                                     <p className=''>PREVIOUS</p>

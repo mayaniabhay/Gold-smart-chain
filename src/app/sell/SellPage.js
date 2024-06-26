@@ -1,37 +1,52 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image1 from '@/assets/rewards/image.svg'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
-import Stand from '@/assets/exchange/stand.svg'
+import Stand from '@/assets/sall/stand.png'
+import MM from '@/assets/sall/mm.svg'
+import Arror from '@/assets/sall/arroa.svg'
+
+
 import Receive from '@/assets/sall/receive.svg'
 
 const data = [
-  {
-      "SNo": "01",
-      "Time": "2023-08-30 : 15:55",
-      "Type": "BUY",
-      "SOLID": "01",
-      "Payment": "$ 8.02",
-      "Status": "Cancel",
-  },
-  {
-      "SNo": "02",
-      "Time": "2023-08-30 : 15:55",
-      "Type": "BUY",
-      "SOLID": "02",
-      "Payment": "$ 8.02",
-      "Status": "Cancel",
-  },
+    {
+        "SNo": "01",
+        "Time": "2023-08-30 : 15:55",
+        "Type": "BUY",
+        "SOLID": "01",
+        "Payment": "$ 8.02",
+        "Status": "Cancel",
+    },
+    {
+        "SNo": "02",
+        "Time": "2023-08-30 : 15:55",
+        "Type": "BUY",
+        "SOLID": "02",
+        "Payment": "$ 8.02",
+        "Status": "Cancel",
+    },
 ]
 
 const SellPage = () => {
-  return (
-    <section className='bg-slate-200'>
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeDropdown = () => {
+        setIsOpen(false);
+    };
+
+    return (
+        <section className='bg-slate-100'>
             <div>
                 <div>
-                    <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
+                    <div className='bg-white shadow-md shadow-slate-300 border md:m-3 mb-2 h-8 '>
                         <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span> Sell </div>
                     </div>
 
@@ -44,11 +59,11 @@ const SellPage = () => {
                                     <h4 className='ml-2 font-bold text-sm'>Sell SOLID</h4>
                                     <div className='md:ml-36 mt-16'>
                                         <div className=''>
-                                            <p className='m-1'>Spend</p>
+                                            <p className='m-1'>Sell</p>
                                             <div className='bg-slate-100 md:w-[430px] h-[84px]'>
                                                 <div>
                                                     <div className='flex justify-between '>
-                                                        <Image className='mt-5 ml-4' src={Stand} alt='stand' />
+                                                        <div className='flex'><Image className='mt-5 w-[27px] h-[27px] ml-4' src={Stand} alt='stand' /><span className='font-bold ml-2 mt-5'>SOLID</span></div>
                                                         <p className='text-[#cea666] font-bold text-2xl mr-4 mt-5'>5</p>
                                                     </div>
                                                 </div>
@@ -56,12 +71,44 @@ const SellPage = () => {
                                         </div>
 
                                         <div className=''>
-                                            <div className='flex justify-between'><p className=''>Receive</p> 
-                                            <span className='md:mr-48'>Available:0.00</span>
+                                            <div className='flex justify-between'><p className=''>Receive</p>
+                                                <span className='md:mr-48'>Available:0.00</span>
                                             </div>
                                             <div className='bg-slate-100 md:w-[430px] h-[84px]'>
                                                 <div className='flex justify-between'>
-                                                    <Image className='mt-5 ml-4' src={Receive} alt='Solid' />
+                                                    <div className='relative flex mt-3'>
+                                                        <span> <Image className='mt-5 ml-4' src={MM} alt='Solid' /></span>
+                                                        <h1 className='font-bold mt-4 ml-3'>EUR</h1>
+                                                        <button onClick={toggleDropdown} type='button'><Image className='mt-5 ml-2' src={Arror} alt='Solid' /></button>
+                                                        {/* <!-- Dropdown menu --> */}
+                                                        {isOpen && (
+                                                            <div className=" absolute mt-2 w-56  rounded-lg shadow-lg bg-white ring-1 top-full ring-black ring-opacity-5">
+                                                                <div>
+                                                                    <div><h2 className='font-bold ml-3 mt-2'>Filter</h2></div>
+                                                                    <div>
+                                                                        <div className='ml-3'>
+                                                                            <p className='text-sm mt-2'>Data</p>
+                                                                            <div className='relative w-[200px] h-[40px] bg-slate-200 mt-1 rounded-md'>
+                                                                                <Image className='absolute ml-44 mt-3' src={Arror} alt='drop/dwun' />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div className='ml-3'>
+                                                                            <p className='text-sm mt-2'>Status</p>
+                                                                            <div className='relative w-[200px] h-[40px] bg-slate-200 mt-1 rounded-md'>
+                                                                                <Image className='absolute ml-44 mt-3' src={Arror} alt='drop/dwun' />
+                                                                            </div>
+                                                                            <div>
+                                                                                <div className='flex mt-3'>
+                                                                                <button className='bg-[#cea666] text-white rounded-full w-24 h-8 items-center flex justify-center '>Reset</button>
+                                                                                <button className='bg-[#cea666] text-white rounded-full w-24 h-8 items-center flex justify-center ml-2 mb-2'>Done</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                    </div>
                                                     <p className='text-[#cea666] font-bold text-2xl mr-4 mt-5'>36.05</p>
                                                 </div>
                                             </div>
@@ -82,6 +129,8 @@ const SellPage = () => {
 
                             </div>
 
+
+
                             {/* right side  */}
                             <div>
                                 <div className=' md:ml-10 md:mt-8 mt-5 rounded  bg-white  md:w-[564px] md:h-[544px]  h-full  shadow-md shadow-black'>
@@ -94,9 +143,9 @@ const SellPage = () => {
                                             </svg>
                                             </span>
                                         </div>
-                                        <p className='ml-10 mt-9 text-sm'>
-                                        Sell SOLID on: Where You Trade in 3 Steps<br />
-                                        How to Sell? (4:10)
+                                        <p className='md:ml-10 mt-9 text-sm'>
+                                            Sell SOLID on: Where You Trade in 3 Steps<br />
+                                            How to Sell? (4:10)
                                         </p>
                                         <div className='ml-1 md:ml-20 mt-16'>
                                             <Image src={Image1} alt='image' />
@@ -111,10 +160,10 @@ const SellPage = () => {
 
                     {/* 4 section */}
                     <div className=' md:flex gap-8 justify-center  items-center '>
-                        <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-200 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
-                            <h1 className='font-bold ml-14'>Recent Sell</h1>
+                        <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-100 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
+                            <h1 className='font-bold '>Recent Sell</h1>
                             <div className='flex justify-between items-center'>
-                                <button className='bg-white mt-2 mr-20  hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
+                                <button className='bg-white mt-2 hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
                                     <svg className='mt-2 ml-2 justify-end' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.375 2.5H3.125V8.75H4.375V2.5ZM12 8.75H8L7.5 8.0625V6.8125L8 6.25H12L12.5 6.875V8.125L12 8.75ZM5.75 12.5H1.75L1.25 11.875V10.625L1.75 10H5.75L6.25 10.625V11.875L5.75 12.5ZM10.625 2.5H9.375V5H10.625V2.5ZM9.375 10H10.625V17.5H9.375V10ZM4.375 13.75H3.125V17.5H4.375V13.75ZM14.25 13.75H18.2375L18.7375 13.125V11.9375L18.2375 11.3125H14.25L13.75 11.9375V13.125L14.25 13.75ZM16.875 2.5H15.625V10H16.875V2.5ZM15.625 15H16.875V17.5H15.625V15Z" fill="#CEA666" />
                                     </svg>
@@ -125,8 +174,8 @@ const SellPage = () => {
 
                     {/* 5 section */}
                     <div className='mt-2 md:flex gap-8 justify-center mb-16'>
-                        <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
-                            <table className="md:min-w-full  mt-10  ">
+                        <div className='ml-2 overflow-auto md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
+                            <table className="w-full mt-10  ">
                                 <thead className=''>
                                     <tr className=''>
                                         <th className="px-4 py-2 border-b">S.No</th>
@@ -158,8 +207,8 @@ const SellPage = () => {
                 </div>
             </div>
         </section>
-    
-  )
+
+    )
 }
 
 export default SellPage

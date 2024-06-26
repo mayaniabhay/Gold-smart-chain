@@ -1,11 +1,11 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
-import Solid from '@/assets/exchange/solid.svg'
-import Receive from '@/assets/sall/receive.svg'
-
+import Stand from '@/assets/sall/stand.png'
+import MM from '@/assets/sall/mm.svg'
+import Arror from '@/assets/sall/arroa.svg'
 
 
 
@@ -30,22 +30,29 @@ const data = [
 
 const euUser = [
   {
-    "stand":"STANDARD IN GOLD E.U.",
-    "bic":"TRWIBEB1XXX",
-    "intended":"Ankit.koffeekodes@gmail.com",
-    "iban":"BE36 9675 1862 2081",
-    "address":"Avenue Louise 54, Room S52 Brussels 1050 Belgium"
+    "stand": "STANDARD IN GOLD E.U.",
+    "bic": "TRWIBEB1XXX",
+    "intended": "Ankit.koffeekodes@gmail.com",
+    "iban": "BE36 9675 1862 2081",
+    "address": "Avenue Louise 54, Room S52 Brussels 1050 Belgium"
   }
 ]
 
 
 
 const BayPage = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <section className='bg-slate-200'>
+    <section className='bg-slate-100'>
       <div>
         <div>
-          <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
+          <div className='bg-white shadow-md shadow-slate-300 border md:m-3 mb-2 h-8 '>
             <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span> Buy </div>
           </div>
 
@@ -55,12 +62,42 @@ const BayPage = () => {
               {/* left side  */}
               <div>
                 <div className=' md:ml-20 md:mt-8 w-[396px]  rounded bg-white   md:w-[750px] md:h-[544px]  h-full  shadow-md shadow-black'>
-                  <div className='flex justify-between'>
+                  <div className='relative flex justify-between'>
                     <h4 className='ml-3 mt-5 m font-bold text-sm'>Buy SOLID</h4>
-                    <button className='flex w-[106.58px] h-[45px] bg-slate-200 rounded-full mr-4 mt-3'><p className='ml-4 mt-2 font-bold text-xl'> EUR</p><span className='mt-4 ml-4 gap-x-1'><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.976676 2.65145L8.07488 10.9349C8.18929 11.0683 8.33122 11.1754 8.49092 11.2489C8.65063 11.3223 8.82433 11.3604 9.00011 11.3604C9.17589 11.3604 9.34959 11.3223 9.5093 11.2489C9.669 11.1754 9.81093 11.0683 9.92535 10.9349L17.0235 2.65145C17.701 1.86078 17.1393 0.639495 16.0983 0.639495L1.89988 0.639493C0.858864 0.639493 0.297223 1.86078 0.976676 2.65145Z" fill="#CEA666" />
-                    </svg>
-                    </span></button>
+                    <button onClick={toggleDropdown} type='button' className='flex w-[106.58px] h-[45px] bg-slate-200 rounded-full mr-4 mt-3'><p className='ml-4 mt-2 font-bold text-xl'> EUR</p>
+                      <span className='mt-4 ml-4 gap-x-1'>
+                        <Image src={Arror} alt='arror' /> </span>
+                    </button>
+                    {/* <!-- Dropdown menu --> */}
+                    {isOpen && (
+                      <div className=" absolute mt-2 w-56  rounded-lg shadow-lg bg-white ring-1 top-full left-full ring-black ring-opacity-5">
+                        <div>
+                          <div><h2 className='font-bold ml-3 mt-2'>Filter</h2></div>
+                          <div>
+                            <div className='ml-3'>
+                              <p className='text-sm mt-2'>Data</p>
+                              <div className='relative w-[200px] h-[40px] bg-slate-200 mt-1 rounded-md'>
+                                <Image className='absolute ml-44 mt-3' src={Arror} alt='drop/dwun' />
+                              </div>
+                            </div>
+                            <div className='ml-3'>
+                              <p className='text-sm mt-2'>Status</p>
+                              <div className='relative w-[200px] h-[40px] bg-slate-200 mt-1 rounded-md'>
+                                <Image className='absolute ml-44 mt-3' src={Arror} alt='drop/dwun' />
+                              </div>
+                              <div>
+                                <div className='flex mt-3'>
+                                  <button className='bg-[#cea666] text-white rounded-full w-24 h-8 items-center flex justify-center '>Reset</button>
+                                  <button className='bg-[#cea666] text-white rounded-full w-24 h-8 items-center flex justify-center ml-2 mb-2'>Done</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+
                   </div>
                   <div className='md:ml-36 mt-16'>
                     <div className=''>
@@ -68,7 +105,10 @@ const BayPage = () => {
                       <div className='bg-slate-100 md:w-[430px] h-[84px]'>
                         <div>
                           <div className='flex justify-between'>
-                            <Image className='mt-5 ml-4' src={Receive} alt='Solid' />
+                            <div className='flex mt-3'>
+                              <span> <Image className='mt-5 ml-4' src={MM} alt='Solid' /></span>
+                              <h1 className='font-bold mt-4 ml-3'>EUR</h1>
+                            </div>
                             <p className='text-[#cea666] font-bold text-2xl mr-4 mt-5'>7.21</p>
                           </div>
                         </div>
@@ -81,7 +121,7 @@ const BayPage = () => {
                       </div>
                       <div className='bg-slate-100 md:w-[430px] h-[84px]'>
                         <div className='flex justify-between'>
-                          <Image className='mt-5 ml-4' src={Solid} alt='Solid' />
+                          <div className='flex mt-2'><Image className='mt-5 w-[27px] h-[27px] ml-4' src={Stand} alt='stand' /><span className='font-bold ml-2 mt-5'>SOLID</span></div>
                           <p className='text-[#cea666] font-bold text-2xl mr-4 mt-5'>1</p>
                         </div>
                       </div>
@@ -103,7 +143,7 @@ const BayPage = () => {
 
               {/* right side  */}
               <div>
-                <div className=' md:ml-10 md:mt-8 mt-5 rounded  bg-slate-200  md:w-[564px] md:h-[544px]  h-full  '>
+                <div className=' md:ml-10 md:mt-8 mt-5 rounded  bg-slate-100  md:w-[564px] md:h-[544px]  h-full  '>
                   <div className='items-center justify-center md:ml-12 mt-10'>
                     {/* 1 box  */}
                     <div className=''>
@@ -118,7 +158,7 @@ const BayPage = () => {
                         </div>
                         <div className='mt-6 ml-3'>
                           {
-                            euUser.map((item,index) => (
+                            euUser.map((item, index) => (
                               <div className='' key={item}>
                                 <p className='mt-1'>{item.stand}</p>
                                 <p className='mt-1'>BIC: {item.bic}</p>
@@ -133,7 +173,7 @@ const BayPage = () => {
                     </div>
                     {/* 2 box  */}
                     <div>
-                    <div className='md:w-[470px] md:h-[264px] mt-2 bg-white shadow-md shadow-black'>
+                      <div className='md:w-[470px] md:h-[264px] mt-2 bg-white shadow-md shadow-black'>
                         <div className='flex justify-between'>
                           <p className='font-bold text-sm mt-5 ml-2'>Non EU Users</p>
                           <span className='mr-3 mt-2'><svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +184,7 @@ const BayPage = () => {
                         </div>
                         <div className='mt-6 ml-3'>
                           {
-                            euUser.map((item,index) => (
+                            euUser.map((item, index) => (
                               <div className='' key={item}>
                                 <p className='mt-1'>{item.stand}</p>
                                 <p className='mt-1'>BIC: {item.bic}</p>
@@ -166,10 +206,10 @@ const BayPage = () => {
 
           {/* 4 section */}
           <div className=' md:flex gap-8 justify-center  items-center '>
-            <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-200 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
-              <h1 className='font-bold ml-14'>Recent Sell</h1>
+            <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-100 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
+              <h1 className='font-bold '>Recent Sell</h1>
               <div className='flex justify-between items-center'>
-                <button className='bg-white mt-2 mr-20  hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
+                <button className='bg-white mt-2 hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
                   <svg className='mt-2 ml-2 justify-end' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.375 2.5H3.125V8.75H4.375V2.5ZM12 8.75H8L7.5 8.0625V6.8125L8 6.25H12L12.5 6.875V8.125L12 8.75ZM5.75 12.5H1.75L1.25 11.875V10.625L1.75 10H5.75L6.25 10.625V11.875L5.75 12.5ZM10.625 2.5H9.375V5H10.625V2.5ZM9.375 10H10.625V17.5H9.375V10ZM4.375 13.75H3.125V17.5H4.375V13.75ZM14.25 13.75H18.2375L18.7375 13.125V11.9375L18.2375 11.3125H14.25L13.75 11.9375V13.125L14.25 13.75ZM16.875 2.5H15.625V10H16.875V2.5ZM15.625 15H16.875V17.5H15.625V15Z" fill="#CEA666" />
                   </svg>
@@ -180,8 +220,8 @@ const BayPage = () => {
 
           {/* 5 section */}
           <div className='mt-2 md:flex gap-8 justify-center mb-16'>
-            <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
-              <table className="md:min-w-full  mt-10  ">
+            <div className=' md:ml-20 md:mt-8 overflow-auto rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
+              <table className="w-full  mt-10  ">
                 <thead className=''>
                   <tr className=''>
                     <th className="px-4 py-2 border-b">S.No</th>

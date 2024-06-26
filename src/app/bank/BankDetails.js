@@ -4,9 +4,9 @@ import React from 'react'
 const BankDetails = () => {
     return (
         <div>
-            <section className='bg-slate-200'>
+            <section className='bg-slate-100'>
                 <div>
-                    <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
+                    <div className='bg-white shadow-md shadow-slate-300 border md:m-3 mb-2 h-8 '>
                         <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span>Bank Details</div>
                     </div>
                     <div className='items-center flex ml-3 gap-x-5 text-center h-16 '>
@@ -50,7 +50,7 @@ const BankDetails = () => {
 
                     {/* 3 section */}
                     <div className='mt-5 md:flex gap-8 justify-center mb-'>
-                        <div className=' md:mt-8 ml-5  bg-slate-200 md:w-[1100px] md:h-[90px]  h-[110px]  '>
+                        <div className=' md:mt-8 ml-5  bg-slate-100 md:w-[1100px] md:h-[90px]  h-[110px]  '>
                             <h1 className='font-bold text-2xl'>Bank account details</h1>
                             <p className='text-sm'>
                                 Here you can find our bank details. Please select the bank that suits you. Please do not forget to enter your user name (Ankit.koffeekodes@gmail.com) as the intended purpose for your payment.
@@ -59,11 +59,11 @@ const BankDetails = () => {
                     </div>
 
                     {/* 4 section  */}
-                    <div className=' md:flex gap-8 justify-center mb-16'>
-                        <div className='md:flex  md:gap-x-6    bg-slate-200 md:w-[1100px] md:h-[390px]  h-[490px]  '>
+                    <div className=' md:flex gap-8 mt-5 justify-center mb-16'>
+                        <div className='md:flex  md:gap-x-6    bg-slate-100 md:w-[1100px] md:h-[390px]  h-full '>
                             {/* Left side  */}
                             <div className='md:ml-10 md:flex gap-2 justify-center '>
-                                <div className=' md:mt-8  rounded bg-white  md:w-[494.9px] md:h-[342px]  h-[490px]  shadow-md shadow-black'>
+                                <div className=' md:mt-8  rounded bg-white  md:w-[494.9px] md:h-[342px]  h-full  shadow-md shadow-black'>
                                     <h1 className='ml-5 text-2xl font-bold '>EUR (EU Users)</h1>
                                     <p className='ml-5 text-sm mt-14'>
                                         STANDARD IN GOLD E.U.<br />

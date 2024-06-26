@@ -4,8 +4,7 @@ import React from 'react'
 import Image1 from '@/assets/rewards/image.svg'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
-import Stand from '@/assets/exchange/stand.svg'
-import Solid from '@/assets/exchange/solid.svg'
+import Stand from '@/assets/sall/stand.png'
 import RewardLogo from '@/assets/rewards/rewardslogo.svg'
 
 
@@ -32,10 +31,10 @@ const data = [
 
 const WithdrawalPage = () => {
   return (
-    <section className='bg-slate-200'>
+    <section className='bg-slate-100'>
             <div>
                 <div>
-                    <div className='bg-white shadow-md shadow-slate-300 border m-3 mb-2 h-8 '>
+                    <div className='bg-white shadow-md shadow-slate-300 border md:m-3 mb-2 h-8 '>
                         <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span> Withdrawal </div>
                     </div>
 
@@ -64,8 +63,8 @@ const WithdrawalPage = () => {
                                             </div>
                                             <div className='bg-slate-100 md:w-[430px] h-[84px]'>
                                                 <div className='flex justify-between'>
-                                                    <Image className='mt-5 ml-4' src={Solid} alt='Solid' />
-                                                    <p className='text-[#cea666] font-bold text-2xl mr-4 mt-5'>36.05</p>
+                                                <div className='flex mt-2'><Image className='mt-5 w-[27px] h-[27px] ml-4' src={Stand} alt='stand' /><span className='font-bold ml-2 mt-5'>SOLID</span></div>
+                                                <p className='text-[#cea666] font-bold text-2xl mr-4 mt-5'>36.05</p>
                                                 </div>
                                             </div>
 
@@ -97,7 +96,7 @@ const WithdrawalPage = () => {
                                             </svg>
                                             </span>
                                         </div>
-                                        <p className='ml-10 mt-9 text-sm'>
+                                        <p className='md:ml-10 mt-9 text-sm'>
                                         Withdrawal STAND or SOLID: Where You Trade in 3 Steps<br />
                                         How to Withdrawal STAND or SOLID ?(4:10)
                                         </p>
@@ -114,10 +113,10 @@ const WithdrawalPage = () => {
 
                     {/* 4 section */}
                     <div className=' md:flex gap-8 justify-center  items-center '>
-                        <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-200 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
-                            <h1 className='font-bold ml-14'>Recent Sell</h1>
+                        <div className='mt-10 md:mt-8 md:flex justify-between items-center flex bg-slate-100 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
+                            <h1 className='font-bold'>Recent Sell</h1>
                             <div className='flex justify-between items-center'>
-                                <button className='bg-white mt-2 mr-20  hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
+                                <button className='bg-white mt-2 hover:bg-slate-100  rounded-full w-28 h-9 flex  shadow-md shadow-slate-300 font-bold'><span className='ml-6 mt-1'>Filter </span>
                                     <svg className='mt-2 ml-2 justify-end' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.375 2.5H3.125V8.75H4.375V2.5ZM12 8.75H8L7.5 8.0625V6.8125L8 6.25H12L12.5 6.875V8.125L12 8.75ZM5.75 12.5H1.75L1.25 11.875V10.625L1.75 10H5.75L6.25 10.625V11.875L5.75 12.5ZM10.625 2.5H9.375V5H10.625V2.5ZM9.375 10H10.625V17.5H9.375V10ZM4.375 13.75H3.125V17.5H4.375V13.75ZM14.25 13.75H18.2375L18.7375 13.125V11.9375L18.2375 11.3125H14.25L13.75 11.9375V13.125L14.25 13.75ZM16.875 2.5H15.625V10H16.875V2.5ZM15.625 15H16.875V17.5H15.625V15Z" fill="#CEA666" />
                                     </svg>
@@ -128,8 +127,8 @@ const WithdrawalPage = () => {
 
                     {/* 5 section */}
                     <div className='mt-2 md:flex gap-8 justify-center mb-16'>
-                        <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
-                            <table className="md:min-w-full  mt-10  ">
+                        <div className='overflow-auto md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
+                            <table className="w-full  mt-10  ">
                                 <thead className=''>
                                     <tr className=''>
                                         <th className="px-4 py-2 border-b">S.No</th>
