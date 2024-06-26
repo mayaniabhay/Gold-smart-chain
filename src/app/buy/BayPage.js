@@ -96,8 +96,6 @@ const BayPage = () => {
                         </div>
                       </div>
                     )}
-
-
                   </div>
                   <div className='md:ml-36 mt-16'>
                     <div className=''>
