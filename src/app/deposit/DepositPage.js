@@ -48,7 +48,6 @@ const DepositPage = () => {
                                         <div className='w-[305px] h-[305px] bg-slate-100 rounded-sm'>
                                         <div className=' items-center justify-center flex '>
                                         <Image className='w-[247px] h-[247px] mt-[30px]' src={Qr} alt='qr/cord' />
-
                                         </div>
                                         </div>
                                         </div>

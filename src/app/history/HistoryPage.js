@@ -52,7 +52,7 @@ const HistoryPage = () => {
                         <div className='mt-1 m-5'> <span className='text-[#cea666] font-medium'>Home/</span>Transaction History</div>
                     </div>
                     <div className='mt-7  items-center md:flex md:justify-center ml-1 md:gap-14 text-center h-16'>
-                        <Link href={"/withdrawal"} className='bg-white hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Withdrawal </Link>
+                        <Link href={"/withdrawal"} className='bg-white hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'><span>Withdrawal</span> </Link>
                         <Link href={"/deposit"} className='bg-white hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Deposit </Link>
                         <Link href={"/buy"} className='bg-white hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Buy </Link>
                         <Link href={"/sell"} className='bg-white hover:bg-[#cea666] ml-3 hover:text-white rounded-full w-28 h-9  shadow-md shadow-slate-300'>Sell </Link>
