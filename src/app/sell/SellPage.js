@@ -171,7 +171,7 @@ const SellPage = () => {
                             </div>
                         </div>
                     </div>
-
+                    
                     {/* 5 section */}
                     <div className='mt-2 md:flex gap-8 justify-center mb-16'>
                         <div className='ml-2 overflow-auto md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
