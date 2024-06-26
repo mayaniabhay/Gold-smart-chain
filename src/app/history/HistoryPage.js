@@ -60,7 +60,7 @@ const HistoryPage = () => {
                     </div>
 
                     {/* 3 section */}
-                    <div className=' md:flex gap-8 justify-center flex '>
+                    <div className='md:flex gap-8 justify-center flex '>
                         <div className='mt-10 md:mt-8 md:flex justify-between items-center ml-40 bg-slate-200 md:w-[1100px] md:h-[90px] w-full  h-[110px]  '>
                             <h1 className='font-bold md:ml-5'>Deposit By Crypto History</h1>
                             <div className=''>
