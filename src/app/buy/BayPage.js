@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react'
-import Image1 from '@/assets/rewards/image.svg'
 import Image from 'next/image'
 import ButtonPage from '@/components/ButtonComponents/ButtonPage'
 import Solid from '@/assets/exchange/solid.svg'
@@ -87,7 +86,6 @@ const BayPage = () => {
                         </div>
                       </div>
 
-                      {/* <div className='bg-slate-200 w-[400px] h-[42px]  md:ml-7 mt-9 items-center flex justify-center'><p>You will receive the Gold purchase price: €29.56</p> </div> */}
 
                       <div className='flex justify-center md:mt-9 mt-10 md:-ml-32 '>
                         <button className='  bg-[#cea666] text-white rounded-full w-28 h-9 shadow-lg shadow-slate-300'>CHECKOUT</button>

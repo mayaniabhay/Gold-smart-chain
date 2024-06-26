@@ -232,7 +232,7 @@ const DashboardPage = () => {
 
 
           {/* 5 section */}
-          <div className=' md:flex gap-8 justify-center mb-16'>
+          <div className=' md:flex gap-5  justify-center flex'>
             <div className='ml-2 md:ml-20 md:mt-8  rounded bg-white  md:w-[1100px] md:h-full  h-full  shadow-md shadow-black'>
               <table className="md:min-w-full  mt-10  ">
                 <thead className=''>
