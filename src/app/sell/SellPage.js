@@ -9,7 +9,6 @@ import MM from '@/assets/sall/mm.svg'
 import Arror from '@/assets/sall/arroa.svg'
 
 
-import Receive from '@/assets/sall/receive.svg'
 
 const data = [
     {
