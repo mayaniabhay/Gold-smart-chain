@@ -70,7 +70,7 @@ const BayPage = () => {
                     </button>
                     {/* <!-- Dropdown menu --> */}
                     {isOpen && (
-                      <div className=" absolute mt-2 w-56  rounded-lg shadow-lg bg-white ring-1 top-full left-full ring-black ring-opacity-5">
+                      <div className=" absolute mt-2 w-56  rounded-lg shadow-lg bg-white ring-1 top-full left-40 md:left-full ring-black ring-opacity-5">
                         <div>
                           <div><h2 className='font-bold ml-3 mt-2'>Filter</h2></div>
                           <div>
